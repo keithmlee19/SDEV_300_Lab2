@@ -25,13 +25,13 @@ def gen_password():
     while True: # prompt user for their password specifications
         try:
             pw_choice = int(input("Choose an option\n"))
-            if (pw_choice == 1):
+            if pw_choice == 1:
                 alphabet += string.ascii_uppercase
-            elif (pw_choice == 2):
+            elif pw_choice == 2:
                 alphabet += string.digits
-            elif (pw_choice == 3):
+            elif pw_choice == 3:
                 alphabet += string.punctuation
-            elif (pw_choice == 4):
+            elif pw_choice == 4:
                 break
             else:
                 print("Invalid input, please enter a number 1-4\n")
@@ -96,8 +96,8 @@ def law_of_cosines():
             pass
         print("Angle must be greater than 0 degrees, please try again\n")
     angle_c_rad = math.radians(angle_c)
-    side_c_squared = (side_a * side_a) + (side_b * side_b) - (2 *
-                                                              side_a * side_b * math.cos(angle_c_rad))
+    side_c_squared = (side_a * side_a) + (side_b * side_b) - \
+        (2 * side_a * side_b * math.cos(angle_c_rad))
     side_c = math.sqrt(side_c_squared)
     print("The length of side c is: " + f"{side_c:.{2}f}\n\n")
 
@@ -121,7 +121,7 @@ def vol_right_circ_cyl():
         print("Height must be greater than 0, please try again\n")
     vol_cylinder = math.pi * rad * rad * height
     print("The volume of the cylinder is: " + f"{vol_cylinder:.{2}f}\n\n")
-    
+
 def handle_menu():
     '''function to handle user menu input choices'''
     while True:

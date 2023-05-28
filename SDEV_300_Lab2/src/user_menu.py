@@ -90,7 +90,7 @@ def law_of_cosines():
     while True:
         try:
             angle_c = int(input("Please enter angle C in degrees\n"))
-            if angle_c > 0 or angle_c <= 90:
+            if angle_c > 0 and angle_c <= 90:
                 break
         except ValueError:
             pass

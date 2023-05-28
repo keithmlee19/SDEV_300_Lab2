@@ -94,7 +94,7 @@ def law_of_cosines():
                 break
         except ValueError:
             pass
-        print("Angle must be greater than 0 degrees, please try again\n")
+        print("Angle must be within the range (0, 90], please try again\n")
     angle_c_rad = math.radians(angle_c)
     side_c_squared = (side_a * side_a) + (side_b * side_b) - \
         (2 * side_a * side_b * math.cos(angle_c_rad))
